@@ -7,3 +7,7 @@ This was built initially to help send out php (swiftmailer) emails without boggi
 Normal eventEmitters are used from the child spawn api, but with an additional PID.
 
 See examples for usage
+
+To Install:
+
+npm install threadHandler
