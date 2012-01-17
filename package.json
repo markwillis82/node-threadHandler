@@ -2,17 +2,17 @@
   "name": "threadHandler",
   "version": "0.1.0",
   "author": "Mark Willis <mwillis.fb@googlemail.com>",
-  "description": "A simple external script thread handler - allowing for multiple 
-  external script to be run and only X amount to be executed at a time",
+  "description": "A simple external script thread handler - allowing for multiple external script to be run and only X amount to be executed at a time",
   "contributors": [ 
     {
-      "name": "Will Cowley"
+      "name": "Will Cowley",
+      "email": "will_c2001@hotmail.com"
     } 
   ],
   "main": "./lib/threadHandler.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nodejitsu/http-server.git"
+    "url": "https://markwillis82@github.com/markwillis82/node-threadHandler.git"
   },
   "keywords": [
     "thread",
