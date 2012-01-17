@@ -1,6 +1,6 @@
 {
   "name": "threadHandler",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "Mark Willis <mwillis.fb@googlemail.com>",
   "description": "A simple external script thread handler - allowing for multiple external script to be run and only X amount to be executed at a time",
   "contributors": [ 
