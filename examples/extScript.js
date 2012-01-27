@@ -4,4 +4,4 @@ console.log("running");
 setTimeout(function() {
 	console.error("Exit");
 	process.exit();
-},10000);
+},20000);
