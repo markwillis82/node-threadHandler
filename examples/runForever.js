@@ -34,4 +34,4 @@ threadHandler.runForever();
 
 setInterval(function() {
 	console.log("Total Threads: "+ threadHandler.getTotalThreads());
-}, 1000);
+}, 10000);

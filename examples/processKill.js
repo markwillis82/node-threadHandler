@@ -7,7 +7,7 @@ console.log("Start Thread Handler");
 threadHandler.setChildScript('node', ['./extScript.js']);
 
 // total threads to run
-threadHandler.setTotalThreads(2);
+threadHandler.setTotalThreads(10);
 
 // some event listeners
 threadHandler.on("childStarted", function(pid) {
@@ -27,17 +27,12 @@ threadHandler.on("exit", function(pid,code) {
 });
 
 // start threading
-var fs = require("fs");
-// using readdir as being built on a mac - but inotify would be better
-fs.readdir('./pending/', function(err, files) {	
-	// async read - puts all callbacks into thread handler
-	files.forEach(function(e) {
-		threadHandler.startChild([e]); // we are sending a custom array of additional arguements to send for the one script being sent
-	});
-	
-});
+threadHandler.runForever();
+// set 10 Second time out
+threadHandler.setMaxTimeout(10000);
 
 // get total threads
+
 setInterval(function() {
 	console.log("Total Threads: "+ threadHandler.getTotalThreads());
-}, 1000);
+}, 10000);
